@@ -2,8 +2,6 @@ import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
 
-// token: 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
-
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
