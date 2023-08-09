@@ -1,31 +1,21 @@
+import { navLink } from '@/data/navLink';
 import Link from 'next/link';
 import React from 'react';
 
 export default function Header() {
   return (
-    <div className=" pl-10 bg-teal-800 text-white">
-      <ul className="flex items-center h-16  gap-20">
-        <li className=" hover:text-yellow-400">
-          <Link href="/" className="text-xl font-bold">
-            Home
-          </Link>
-        </li>
-        <li className=" hover:text-yellow-400">
-          <Link href="/cost" className="text-xl font-bold">
-            Cost page
-          </Link>
-        </li>
-        <li className=" hover:text-yellow-400">
-          <Link href="/about_us" className="text-xl font-bold">
-            About page
-          </Link>
-        </li>
-        <li className=" hover:text-yellow-400">
-          <Link href="/post/" className="text-xl font-bold">
-            Post
-          </Link>
-        </li>
-      </ul>
+    <div className="flex gap-4 pl-10 bg-teal-800 text-white">
+      {navLink.map((link) => (
+        <ul key={link.name} className="flex items-center h-16 ">
+          {
+            <Link href={link.path} className=" text-xl font-bold">
+              <li className=" hover:text-yellow-400 hover:bg-stone-950 rounded-md transition-all duration-500 py-2 px-4">
+                {link.name}
+              </li>
+            </Link>
+          }
+        </ul>
+      ))}
     </div>
   );
 }

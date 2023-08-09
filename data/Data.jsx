@@ -1,8 +1,20 @@
 export function AllData(postid) {
   const postsData = [
-    { id: 1, title: 'First Post', description: 'This is the post to display' },
-    { id: 2, title: 'Second Post', description: 'This is the post to display' },
-    { id: 3, title: 'Third Post', description: 'This is the post to display' },
+    {
+      id: 'First',
+      title: 'First Post',
+      description: 'This is the post to display',
+    },
+    {
+      id: 'Second',
+      title: 'Second Post',
+      description: 'This is the post to display',
+    },
+    {
+      id: 'Third',
+      title: 'Third Post',
+      description: 'This is the post to display',
+    },
   ];
 
   if (postid) {

@@ -1,9 +1,11 @@
 import { AllData } from '@/data/Data';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 export default function Post({ posts }) {
+  const router = useRouter();
   return (
     <div className="text-center flex flex-col justify-center items-center">
       <Head>
@@ -17,20 +19,22 @@ export default function Post({ posts }) {
             href={`/post/${post.id}`}
             key={post.id}
           >
-            <p className="text-2xl font-bold uppercase">{post.id}</p>
             <h1 className="text-2xl font-bold">{post.title}</h1>
             <p className="text-2xl">{post.description}</p>
           </Link>
         );
       })}
+      <button className="my-3" onClick={() => router.push('/user/')}>
+        Click
+      </button>
     </div>
   );
 }
 
 export async function getStaticProps() {
-  //   const posts = AllData();
-  const { events_categories } = await import('@/data/data.json');
+  const posts = AllData();
+  // const { events_categories } = await import('@/data/data.json');
   return {
-    props: { posts: events_categories },
+    props: { posts },
   };
 }

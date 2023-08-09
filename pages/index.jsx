@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main style={{ minHeight: '525px' }}>
+      <main style={{ minHeight: '525px' }} className="p-4">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque,
         deserunt cupiditate laboriosam ex voluptate accusamus! Excepturi
         mollitia odit, eos aperiam eius libero laudantium amet reprehenderit
