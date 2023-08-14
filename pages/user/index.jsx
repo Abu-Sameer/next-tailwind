@@ -1,9 +1,20 @@
 import React from 'react';
+// import useSWR from 'swr';
 
-export default function User({ userData }) {
+export default function User({ data }) {
+  // const fetcher = (...args) => fetch(...args).then((res) => res.json());
+  // const { data, error } = useSWR('http://localhost:3000/api/userdata', fetcher);
+
+  // if (error) {
+  //   <div>Error fetching data...</div>;
+  // }
+  // if (!data) {
+  //   <div>Loading data...</div>;
+  // }
+
   return (
     <div>
-      {userData.map((data) => (
+      {data.map((data) => (
         <h1 key={data.id} className="text-3xl font-bold text-center">
           {data.name}
         </h1>
@@ -13,9 +24,9 @@ export default function User({ userData }) {
 }
 
 export async function getStaticProps() {
-  const data = await fetch('http://localhost:3000/api/userdata');
-  const userData = await data.json();
+  const datas = await fetch('http://localhost:3000/api/userdata');
+  const data = await datas.json();
   return {
-    props: { userData },
+    props: { data },
   };
 }

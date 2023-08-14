@@ -10,3 +10,21 @@
     py-1 rounded-lg active:scale-75;
   }
 }
+
+.logo {
+  rotate: 1 2 1 360deg;
+  transition-duration: 2s;
+}
+
+.imge {
+  transform: translateX(1100px);
+  transition-duration: 3s;
+}
+.imges {
+  transform: translateX(-1100px);
+  transition-duration: 3s;
+}
+.im {
+  transform: translateX(0);
+  transition-duration: 3s;
+}
