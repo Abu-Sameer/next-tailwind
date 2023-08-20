@@ -1,6 +1,6 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import { useState } from 'react';
+import Head from "next/head";
+import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
   const [go, setgo] = useState(false);
@@ -12,14 +12,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main style={{ minHeight: '525px' }} className="p-4">
+      <main style={{ minHeight: "525px" }} className="p-4">
         <div onClick={() => setgo(!go)} className={`float-left mr-4 p-2`}>
           <Image
             src="/logo.jpg"
             height="200"
             width="200"
             alt="logo"
-            className={`${go ? 'imge' : 'im'} rounded-full`}
+            className={`${go ? "imge" : "im"} rounded-full`}
           />
         </div>
         <div onClick={() => setgo(!go)} className={`float-right ml-4 p-2`}>
@@ -28,7 +28,7 @@ export default function Home() {
             height={200}
             width={200}
             alt="logo"
-            className={`${go ? 'imges' : 'im'} rounded-full`}
+            className={`${go ? "imges" : "im"} rounded-full`}
           />
         </div>
         <p className="text-justify">
