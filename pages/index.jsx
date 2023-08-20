@@ -31,7 +31,7 @@ export default function Home() {
             className={`${go ? 'imges' : 'im'} rounded-full`}
           />
         </div>
-        <p className="">
+        <p className="text-justify">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque,
           deserunt cupiditate laboriosam ex voluptate accusamus! Excepturi
           mollitia odit, eos aperiam eius libero laudantium amet reprehenderit

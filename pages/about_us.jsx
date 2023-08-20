@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import React from 'react';
+import Head from "next/head";
+import React from "react";
 
 export default function Aboutus() {
   return (
@@ -7,13 +7,13 @@ export default function Aboutus() {
       <Head>
         <title>About Us</title>
       </Head>
-      <main style={{ minHeight: '525px' }} className="container md:mx-auto">
+      <main style={{ minHeight: "525px" }} className="container md:mx-auto">
         <div className="">
           <h1 className="text-3xl font-bold text-red-500">About Us</h1>
           <p className="text-justify">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et placeat
             magni corrupti excepturi aperiam eveniet laboriosam id autem odio,
-            eius laudantium quis delectus libero hic rerum voluptatum
+            paldo eius laudantium quis delectus libero hic rerum voluptatum
             consequuntur minus tempore ipsa eligendi ullam necessitatibus
             cupiditate cum ab? A, consectetur fugit quas temporibus laborum
             consequuntur corporis sunt perspiciatis alias tempora natus officiis
